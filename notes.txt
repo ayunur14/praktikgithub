@@ -1,0 +1,42 @@
+UTS
+1. Report
+- Cover
+
+Bab 1
+- Latar belakang
+- Tujuan Project
+- Rumusan Masalah
+- Startup
+
+Chapter 2
+- Design Thinking/Methodology yang dipakai
+- Pembagian Tugas Kelompok
+contoh:
+si A analisis
+si B Dev
+si C Project Manager
+si D QA
+
+Chapter 3
+- Desain Sistemnya (ERD. BPMN, dll)
+- Milestone atau goals projectnya
+- Gantchart
+
+Chapter 4
+- Progress Implementasi Coding / UIUX (kalua sudah ada)
+
+Chapter 5
+- Saran
+- Kesimpulan
+
+2. Presentasi
+
+- Judul
+- Nama kelompok dan Tugas Kelompok > startup
+si A = Dev
+si B = QA
+si C = Dev, QA, PM
+- Chapter 1
+- Chapter 2
+- Chapter 3
+- Chapter 4
