@@ -14,6 +14,8 @@
     <div class="card-header">
       <a href="<?php echo site_url('dash/form_mhs') ?>"><i class="fas fa-plus"></i> Tambah</a>
       <a href="/mahasiswa/export" style="margin-bottom: 10px; display: inline-block;">Export ke Excel</a>
+      <a href="/mahasiswa/export-pdf" style="margin-bottom: 10px; display: inline-block;">Export ke PDF</a>
+
 
     </div>
     <div class="card-body">

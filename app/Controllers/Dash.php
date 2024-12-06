@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 use App\Models\MMahasiswa;
 use CodeIgniter\Controller;
+use Dompdf\Dompdf;
+use Dompdf\Options;
+
 
 class Dash extends Controller
 {
@@ -163,6 +166,59 @@ class Dash extends Controller
         $writer->save('php://output');
         exit;
     }
+    public function exportPDF()
+    {
+        // Instantiate the mahasiswa model
+        $model = new MMahasiswa();  // Make sure you are using the correct model
+        $mahasiswa = $model->findAll();  // Fetch all mahasiswa data
+
+        // Load library Dompdf
+        $dompdf = new Dompdf();
+
+        // Buat konten HTML untuk PDF
+        $html = '
+        <h1>Data Mahasiswa</h1>
+        <table border="1" cellpadding="5" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>';
+
+        foreach ($mahasiswa as $mhs) {
+            // Ensure to escape any potential HTML
+            $html .= '<tr>
+                <td>' . esc($mhs['id_mhs']) . '</td>
+                <td>' . esc($mhs['nama']) . '</td>
+                <td>' . esc($mhs['email']) . '</td>
+                <td><img src="' . base_url('uploads/' . $mhs['foto']) . '" width="50" /></td>
+            </tr>';
+        }
+
+        $html .= '
+            </tbody>
+        </table>';
+
+        // Load HTML to Dompdf
+        $dompdf->loadHtml($html);
+
+        // Set paper size and orientation
+        $dompdf->setPaper('A4', 'portrait');
+
+        // Render the HTML as PDF (this can take time if the document is large)
+        $dompdf->render();
+
+        // Output the generated PDF to browser
+        $dompdf->stream('Data_Mahasiswa.pdf', ['Attachment' => true]);
+
+        // Ensure no further code is executed after PDF output
+        exit;
+    }
+
     
 
 }

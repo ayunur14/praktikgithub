@@ -24,6 +24,8 @@ $routes->get('dash/edit_data/(:num)', 'Dash::edit_data/$1'); // Halaman untuk ed
 $routes->post('dash/update_data/(:num)', 'Dash::update_data/$1'); // Update data mahasiswa
 $routes->get('dash/delete/(:num)', 'Dash::delete/$1');
 $routes->get('/mahasiswa/export', 'Dash::exportExcel');
+$routes->get('/mahasiswa/export-pdf', 'Dash::exportPDF');
+
 
 
 
