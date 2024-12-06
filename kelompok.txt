@@ -2,52 +2,62 @@ Database & Backend
 
 Kelompok 1 : 
 - Ayu 
-- Bayu
+- Bayu (PM)
 - Ai
 - Ika 
 - Sahrul
+obstacle: perbedaan jam absen. logo sudah. 
 
 Kelompok 2 : 
 - Hilman
-- Ais
+- Ais (PM)
 - Tian
 - Heri
 - Popy 
+Update: komentar fitur login dll sudah. 
+SUdah bisa upload gambar, timestamp, fakultas login, notifikasi, profile editing
 
 Kelompok 3 : 
 - Rifky 
-- Syarif 
+- Syarif  
 - Rendy 
-- Abu 
+- Abu (PM)
 - Rabi 
+Update: tiketing problem. logo sudah. pindah dari native ke framework
 
-Kelompok 4 : 
-- Umi 
+Kelompok 4 : -
+- Umi (PM)
 - Dilan
 - Anwar
 - Liza 
 - Athaya 
+Update: nambah logo dan kategori, crud penulis penerbit
 
 Kelompok 5 : 
-- Aji 
+- Aji (PM)
 - Ahmad 
 - Risky 
 - Haris
 - Syaeful
+Update: 100% codingan sudah. proposal progress erd
 
 Kelompok 6 : 
 - Mila 
 - Rafi
-- Dea 
-- Siti 
+- Dea
+- Siti  
 - Dadan 
+- Dendi (PM)
+Update: UI sudah semua. Crud sudah semua.
 
 Kelompok 7 : 
 - Iyus 
-- Raka 
+- Raka (PM)
 - Riziq
 - Muklis 
 - Fikri
 - Ferdinan
+Update: Development 60%, ditambah status
+obstacle: notifikasi dan konten
 
 Note: kelompoknya tidak bisa diubah lg ya. Kl mau kesempatan terakhir sabtu besok, supaya tidak japri saya satu2. Thank you
